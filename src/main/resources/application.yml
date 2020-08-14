@@ -12,18 +12,18 @@ spring:
     database1:
       username: savoidage
       password: 212121
-      driverClassName: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/jpa-muli-datasource-1?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+      driverClassName: com.p6spy.engine.spy.P6SpyDriver
+      url: jdbc:p6spy:mysql://127.0.0.1:3306/jpa-muli-datasource-1?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
     # 数据源-2，名称为 database2
     database2:
       username: savoidage
       password: 212121
-      driverClassName: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/jpa-muli-datasource-2?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+      driverClassName: com.p6spy.engine.spy.P6SpyDriver
+      url: jdbc:p6spy:mysql://127.0.0.1:3306/jpa-muli-datasource-2?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
 
   jpa:
     database: mysql
-    show-sql: true
+#    show-sql: true
     hibernate:
       ddl-auto: update
       naming:
